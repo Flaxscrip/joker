@@ -2,6 +2,7 @@ import { createHelia } from 'helia';
 import { FsBlockstore } from 'blockstore-fs';
 import { json } from '@helia/json';
 import axios from 'axios';
+import networking;
 
 const blockstore = new FsBlockstore('./ipfs');
 const helia = await createHelia({ blockstore });
